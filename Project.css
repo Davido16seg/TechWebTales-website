@@ -1,0 +1,359 @@
+:root{
+    --primary:#ddd;
+    --dark:#333;
+    --shadow: 0 1px 5px rgb(104,104,104,0.8)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.button{
+    background-color:rgb(33, 33, 109);
+    padding: 5px;
+    /* height: 15px; */
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-widh: 1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+@media (max-widh: 600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0;
+}
+header a{
+    text-transform: capitalize;
+    font-weight: 900;
+}
+header h2{
+    text-transform: uppercase;
+}
+header .nav{
+    display: flex;
+}
+header .nav li{
+    margin: 0 15px;
+}
+header .nav li:first-child{
+    margin-left: 0;
+}
+header .nav li:last-child{
+    margin-right: 0;
+}
+.lione:hover{
+    border-bottom: 2px solid lightblue;
+    font-size: 20px;
+}
+.litwo:hover{
+    border-bottom: 2px solid lightblue;
+    font-size: 20px;
+}
+.lithree:hover{
+    border-bottom: 2px solid lightblue;
+    font-size: 20px;
+}
+.lifour:hover{
+    border-bottom: 2px solid lightblue;
+    font-size: 20px;
+}
+@media (max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header .nav li{
+        margin: 0 7px;
+    }
+}
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.box video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.box h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+.headingContainer{
+    margin-top: 150px;
+}
+.box h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.box a.boxBtn{
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 4px solid #fff;
+    transition: all .5s;
+}
+.box a.boxBtn:hover{
+    background: #fff;
+    color: black;
+}
+@media (max-idth: 800px){
+    .box{
+        min-width: 600px;
+    }
+    .box h1{
+        font-size: 32px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+    .box a.boxBtn{
+        padding: 15px 40px;
+    }
+}
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    /* grid-template-columns: repeat(auto-fit,minmax (200px,1fr)); */
+    grid-template-columns: repeat(4,1fr);
+}
+.boxes > div {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.boxes > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: gray; 
+    z-index: 2;
+    /* border: 1px solid darkblue; */
+}
+.theweb{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.theInternet{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.WWWvsInternert{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.WebEvolution{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.InternetProtocols{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.AppArch{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+.ClientServerEng{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    height: 300px;
+    box-shadow: var(--shadow);
+}
+timeFrame{
+    width: 1280px;
+    margin: 0px auto;
+}
+.pic1{
+    width: 800px;
+    margin-left: 250px;
+}
+
+.summary{
+    color: black;
+}
+
+
+
+.thewebicon{
+    height: 25px;
+}
+.historyicon{
+    height: 25px;
+}
+.interneticon{
+    height: 25px;
+}
+.protocolicon{
+    height: 25px;
+}
+.video3{
+    width: 600px;
+}
+.info{
+    background: var(--primary);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+}
+.info .textbox .span1{
+    font-size: 62px;
+    color: black;
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+        transform: translate(50px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: blue;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 7px;
+    padding-left: 1px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon a:hover {
+    color: blue;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+.footer-bottom p {
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.footer-bottom p:hover {
+    color: blue;
+}
